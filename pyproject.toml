@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-swesmith-local"
+version = "0.1.0"
+description = "Local-only Qwen3.6 MoE LoRA SFT and patch preference DPO"
+requires-python = ">=3.12"
+dependencies = ["PyYAML>=6", "numpy>=2", "psutil>=6"]
+
+[project.scripts]
+qs = "qwen_swesmith.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

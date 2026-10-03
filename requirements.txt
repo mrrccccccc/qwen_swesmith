@@ -1,0 +1,20 @@
+# Exact direct pins verified against PyPI metadata on 2026-10-02.
+# Native Windows / Linux shared dependencies. Install torch/torchvision first
+# through setup_env.py, which selects explicit official CUDA wheels.
+# This is NOT a full transitive lock; each real run records pip freeze.
+transformers==5.18.0
+peft==0.21.2
+accelerate==1.15.0
+datasets==5.0.1
+huggingface-hub==1.33.0
+tokenizers==0.23.2
+safetensors==0.8.0
+PyYAML==6.0.3
+numpy==2.5.3
+matplotlib==3.11.2
+psutil==7.2.2
+fastapi==0.142.2
+uvicorn==0.54.0
+pydantic==2.13.5
+Jinja2==3.1.6
+pillow==12.3.0
